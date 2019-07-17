@@ -1,0 +1,22 @@
+{
+  "name": "jekyll_npm_boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devbynyden/jekyll_npm_boilerplate.git",
+  "homepage": "https://github.com/devbynyden/jekyll_npm_boilerplate.git#readme",
+  "author": "DevByNyden",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "./node_modules/.bin/webpack --watch | jekyll serve -H 0.0.0.0 --force_polling --livereload --incremental",
+    "build": "./node_modules/.bin/webpack | bundle exec jekyll build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}

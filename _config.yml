@@ -1,0 +1,32 @@
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+  - ".sass-cache"
+  - "node_modules"
+  - "package.json"
+  - "yarn-error.log*"
+  - "webpack.config.js"
+  - "webpack"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+# Site settings
+title: Jekyll NPM Boilerplate
+subtitle: ""
+url: "" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+baseurl: ""
+
+# Tracker
+# analytics: UA-115376140-1
