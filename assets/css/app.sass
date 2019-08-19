@@ -1,0 +1,22 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap')
+$body-family: "Oswald", sans-serif
+$section-padding-large: 0rem 0rem
+$body-background-color: #EFF3F4
+$maju-blue: #01BAEF
+$info: $maju-blue
+$tabs-link-active-color: $maju-blue
+$tabs-link-active-border-bottom-color: $maju-blue
+$tabs-toggle-link-active-background-color: $maju-blue
+$tabs-toggle-link-active-border-color: $maju-blue
+$navbar-item-hover-color: none
+$navbar-tab-hover-border-bottom-color: none
+
+.section-full
+    @extend .section
+    padding: 0 !important
+
+.invert
+    filter: invert(1)
+
+@import "../../node_modules/bulma/bulma.sass"

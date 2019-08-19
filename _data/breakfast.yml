@@ -1,0 +1,55 @@
+subtitle_logo: "Smoothies, hot, cold, bubbly of boozy drinks nodig?<br>Vraag onze drankenkaart"
+intro: "Vanaf 10 personen kunnen wij een brunchbuffet voorzien 25€/persoon all-in met een zeer gevarieerd aanbod voor elk wat wils.<br>Kindjes vanaf 3jaar betalen 3€ + 1€/levensjaar (tot max.12jaar). Wij werken op maat van uw gezelschap. Reservaties via <a href='mailto:info@maju.shop'>info@maju.shop</a>"
+products:
+  - name: Smoke IT
+    price: "9.50"
+    description: "Roerei met gerookte zalm garnituur & speltbrood toast"
+  - name: La Mama
+    price: "7.50"
+    description: "Omelet met groenten, ham, kaas & brood"
+  - name: Juleske
+    price: "5.00"
+    description: "Koffie, croissant"
+  - name: Jules
+    price: "12.00"
+    description: "Croissant, boter, brood, kaas, hesp, zoetigheden, koffie & verse fruitsap"
+  - name: Marcelleke
+    price: "16.00"
+    description: "Basis Jules + yoghurt & eitje naar keuze"
+  - name: Marcel
+    price: "20.00"
+    description: "Basis Marcelleke + cava, rood fruit & gerookte zalm"
+  - name: Maju
+    price: "13.50"
+    description: "hummus, rode biet kaviaar, geprakte sweetpotato.<br>Met komijn, brood, avocado,colesla met zelf gepekelde groentjes & zoetigheden"
+  - name: Vanilla Break Bowl
+    price: "10.50"
+    description: "Vanille, aardbei, braam, framboos, glutenvrije haver, honing & sojamelk.<br>Afgewerkt met seizoensfruit, gojibes, chiazaad & glutenvrije homemade granola"
+extras_title: "Mix & Match"
+extras:
+  - name: Croissant
+    price: "2.50"
+  - name: Pistolet
+    price: "1.00"
+  - name: "Roerei, spiegelei, zachtgekookt ei"
+    price: "2.50"
+  - name: Brood
+    price: "1.50"
+  - name: Jus
+    price: "2.50"
+  - name : "Ham"
+    price: "0.50"
+  - name : "Kaas"
+    price: "0.50"
+  - name : "Kipcurry"
+    price: "1.50"
+  - name : "Krabsla"
+    price: "2.00"
+  - name : "Gerookte zalm"
+    price: "3.50"
+  - name : "Yoghurt"
+    price: "2.50"
+  - name : "Avocado"
+    price: "2.50"
+  - name : "Granola"
+    price: "1.0/100gr"

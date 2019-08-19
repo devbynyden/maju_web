@@ -61,3 +61,5 @@ module.exports = {
     "build": "./node_modules/.bin/webpack | bundle exec jekyll build"
   },
 ```
+
+## Powered By

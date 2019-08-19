@@ -11,22 +11,24 @@ exclude:
   - "yarn-error.log*"
   - "webpack.config.js"
   - "webpack"
+  - "assets/css/app.sass"
 
 keep_files:
   - "CNAME"
   - ".git"
   - ".gitignore"
 
-sass:
-    style: compressed
-    sass_dir: _sass
+# sass:
+#     style: compressed
+#     sass_dir: node_modules/bulma
 
 # Site settings
-title: Jekyll NPM Boilerplate
+title: Maju - Slowfood & Drinks Set To An Urban Heartbeat
 subtitle: ""
 url: "" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
-
+logo: "assets/images/logo_white.png"
+currency: €
 # Tracker
-# analytics: UA-115376140-1
+# analytics: UA-124231600-1

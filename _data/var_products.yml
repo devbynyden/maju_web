@@ -1,0 +1,15 @@
+products:
+  - name: Club
+    base: Mesclun, wortel, witte kool, komkommer, gekookt ei, tomaat, mayo
+    price: "4.50"
+    variations:
+      - name: Chicken madras curry
+        price: "5.00"
+      - name: Krabby
+        price: "1.50"
+      - name: Belegen kaas
+        price: "0.50"
+      - name: Beenham
+        price: "0.50"
+      - name: Ham/kaas
+        price: "1.00"

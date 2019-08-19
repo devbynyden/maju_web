@@ -1,0 +1,34 @@
+- name: Fruity Juices
+  subtitle: 50cl
+  price: "5.50"
+  products:
+    - name: Power Up
+      description: "Aardbei, banaan, appelsiensap"
+    - name: Berry Boost
+      description: "Aardbei, framboos, braam, appelsap"
+    - name: Tropical Fever
+      description: "Papaja, mango, ananassap"
+    - name: Bee Peach
+      description: "Vijgen, honing, vanille, perzik, banaan, appelsap"
+    - name: Vanilla Break
+      price: "10.50"
+      description: "Glutenvrije haver, aardbei, braam, framboos, honing, vanille sojamelk"
+- name: Veggie Juices
+  subtitle: 50cl
+  price: "5.80"
+  products:
+    - name: Green Buddha
+      description: "Spinazie, gember, limoen, hennepzaad, matcha, appelsap, peer, munt"
+    - name: Funset
+      description: "Kurkuma, zoete patat, wortel, mandarijn, citroen, appelsiensap"
+    - name: Forest
+      description: "Avocado, banaan, boerenkool, citroen, appelsap"
+    - name: Temptation
+      description: "Wortel, papaya, passievrucht, ananassap"
+- name: Proteïne Smoothies
+  price: "7.00"
+  products:
+      - name: Drop It
+        description: "Wei, eiwit, chlorella, spirulina, rijstmeel, aardbei, granaatappel, bosbes, hennepzaad, appelsap"
+      - name: Like Its Hot
+        description: "Wei, eiwit, chlorella, spirulina, rijstmeel, spinazie, ananassap, banaan, sojabonen, papaverzaad"

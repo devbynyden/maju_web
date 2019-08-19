@@ -1,0 +1,41 @@
+{% for category in site.data.products %}
+<div class="columns">
+    <div class="column">
+        <h1 class="title has-text-centered"> | {{ category.name | downcase }} | </h1>
+        {% if category.subtitle %}
+        <p class="subtitle has-text-centered">{{ category.subtitle }}</p>
+        {% endif %}
+        <div class="columns is-multiline is-variable">
+            {% for product in category.products %}
+            <div class="column is-half">
+                <div class="columns">
+                    <div class="column is-5">
+                        <h3 class="subtitle is-size-4 has-text-weight-semibold">{{ product.name }}</h3>
+                    </div>
+                    <div class="column is-7">
+                        <div class="has-text-info has-text-weight-bold is-pulled-right is-size-4">
+                            {% if product.var-prices %}
+                            {%  for var-price in product.var-prices %}
+                            <b>{{ var-price.name }}</b>: {{ site.currency }}{{ var-price.price }}
+                            {% endfor %}
+                            {% elsif category.var-prices %}
+                            {%  for var-price in category.var-prices %}
+                            <b>{{ var-price.name }}</b>: {{ site.currency }}{{ var-price.price }}
+                            {% endfor %}
+                            {% elsif product.price %}
+                            {{ site.currency }}{{ product.price }}
+                            {% elsif category.price %}
+                            {{ site.currency }}{{ category.price }}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% if product.description %}
+                    <div class="has-text-justified is-size-5">{{ product.description }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}

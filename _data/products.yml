@@ -1,0 +1,87 @@
+- name: Soep
+  subtitle: Warm of koud
+  products:
+      - name: Kippenbouillon
+        price: "3.50"
+      - name: Tomaat
+        price: "3.00"
+      - name: Dagsoep
+        price: "3.00"
+      - name: Supplement brood
+        price: "0.50"
+- name: Specials
+  subtitle: "Keuze uit: Wrap, bruine baguette, witte baguette of speltbrood"
+  price: "5.00"
+  products:
+      - name: Buffalo
+        description: "Buffelmozzarella, tomaat, rucola, balsamico, zongedroogde tomaat, lente-ui, pesto, olijfolie/balsamico, pijnboompitten"
+      - name: Veggi Grill
+        description: "Feta, rode bieten tapenade, gegrilde paprika en courgette, geroosterde paprika, mesclun, rode ui, Griekse yoghurt dressing, zonnebloempitten"
+      - name: Chick
+        description: "Pulled chicken, avocado, gepekelde groenten, waterkers, ui-crumble, honingmosterd dressing"
+        price: "5.50"
+      - name: Goatey
+        description: "Gegrilde geitenkaas, rucola, rode bieten kaviaar, spinazie, crunchy noten, peer, lente-ui, honingmosterd dressing"
+        price: "5.50"
+      - name: Roast It
+        description: "Rosbief, “Echte knolseldersla”, tomaat, gekookt ei, mesclun, honingmosterd dressing"
+        price: "6.00"
+      - name: Smokey Salmon
+        description: "Gerookte Zalm, komkommer, waterkers, radijs, lente-ui, granaatappel, limoen-olijfolie"
+        price: "6.00"
+      - name: Vegan
+        description: "Sweet potato, hummus, avocado, gegrilde groenten, romeinse sla, lente-ui, cresonette, olijfolie-azijn"
+      - name: Green Goddess (Vegan)
+        description: "Bonen hummus, koolsla, goji, rucola, selder, olijven broccoli, champignon, zadenmix"
+- name: Bowlzz
+  products:
+      - name: Breakfast Bowl
+        description: "Topping volgens het seizoen"
+        price: "10.50"
+- name: Cold Salads
+  subtitle: "Keuze uit: Small, Big of Wrap"
+  var-prices:
+      - name: Small
+        price: "8.50"
+      - name: Big
+        price: "12.50"
+      - name: Wrap
+        price: "7.50"
+  products:
+      - name: Guaca
+        description: "Mesclun, gemarineerde kip, guacamole, gepekelde groenten, ei, ui-crumble, witte kool, mais, radijs, tomaat, koriander, honingmosterd dressing"
+      - name: Buffalo
+        description: "Rucola, tomaat, buffelmozzarella, zongedroogde tomaat, pijnboompitten, pesto, avocado, basilicum, artisjok, olijfolie balsamico dressing"
+      - name: Japanese Roast
+        description: "Rosbief, romeinse sla, wacame, champignons, edamame, knolseldersla, groene luxe groenten, geconfijte gember, radijs, koriander, notenmix, radijs, wasabi dressing"
+      - name: Greek
+        description: "Feta, rode ui, komkommer, tomaat, gebrande paprika, lente ui, olijven, oregano, ijsbergsla, geroosterde aubergine kaviaar, olijfolie-rode wijn azijn"
+      - name: Smokey
+        description: "Mesclun, gerookte zalm, avocado, selder, ei, granaatappel, groene bonenmix, rode ui, komkommer, gebrande paprika, Griekse yoghurt dressing"
+      - name: Goatey
+        description: "Rucola, geitenkaas, rode bieten kaviaar, walnoten, crunchy noten, peer, radijs, framboos, spinazie, lente ui, ui-crumble , honingmosterd dressing"
+      - name: Green Goddess (Vegan)
+        description: "Mesclun, bonen hummus, koolsla, rucola, selder, olijven broccoli, champignon, zadenmix"
+        var-prices:
+            - name: Small
+              price: "7.50"
+            - name: Big
+              price: "10.50"
+            - name: Wrap
+              price: "7.50"
+- name: Warm Salads
+  subtitle: "Keuze uit: Small, Big of Wrap"
+  var-prices:
+      - name: Small
+        price: "8.50"
+      - name: Big
+        price: "12.50"
+      - name: Wrap
+        price: "7.50"
+  products:
+      - name: Sweet Chili
+        description: "Quinoa, pulled chicken, geroosterde paprika & courgette, mais, gepekelde groenten, avocado, koriander, sesamzaad, opgelegde paprika, lente ui, gebakken uit, sweet chili dressing"
+      - name: Green Buddha (Vegan)
+        description: "Groene bonen mix, Wilde rijst, edamame, spinazie, selder, artisjok, avocado, lente-ui, peterselie, hummus, komkommer, Thai sesam dressing"
+      - name: Pearl
+        description: "Parelcouscous, Zoete patat, feta, tomaat, olijven, komkommer, geroosterde paprika & courgette, zadenmix, peterselie, zongedroogde tomaten, pesto dressing"
