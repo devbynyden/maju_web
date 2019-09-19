@@ -1,7 +1,10 @@
 * partners page
 * granim.js??
-* breakfast
-* pictures
-* bigger logos
+* problem food menu mobile
+* change font color menu and hamburger
+* change overlay gradient
 * contactformulier
-* better map
+* colors    cba145ff
+            3f4a56ff
+*
+* lighthouse - tests

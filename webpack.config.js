@@ -34,6 +34,10 @@ module.exports = {
                 loader: "file-loader"
             },
             {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.s(a|c)ss$/,
                 use: [
                     "style-loader", // creates style nodes from JS strings

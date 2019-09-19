@@ -1,138 +1,134 @@
 ---
 layout: default
 ---
-{% if page.shop_name == "Zuid" %}
-<section class="hero is-danger is-medium is-bold box">
-    {% else %}
-    <section class="hero is-info is-medium is-bold box">
-        {% endif %}
-        <div id="home" class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="/">
-                            <img src='{{ site.logo }}' alt="Logo">
-                        </a> {{ page.shop_name }}
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <div class="tabs is-right">
-                                <ul>
-                                    {% for menu-item in site.data.shop_nav %}
-                                    <li><a href="#{{ menu-item.link }}">{{ menu-item.title }}</a></li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
+<section class="hero-{{ page.shop_name | downcase }} is-medium is-bold box-shop">
+    <div id="home" class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a aria-label="Maju Logo" class="navbar-item" href="/">
+                        <img class="shop-logo" src='{{ site.logo }}' alt="Logo">
+                    </a> {{ page.shop_name }}
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                {% for menu-item in site.data.shop_nav %}
+                                <li><a aria-label="{{ menu-item.title }}"data-scroll href="#{{ menu-item.link }}">{{ menu-item.title }}</a></li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Maju {{ page.shop_name }}
+            </h1>
+            <h2 class="subtitle">
+                {{ page.subtitle }}
+            </h2>
         </div>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title">
-                    Maju {{ page.shop_name }}
-                </h1>
-                <h2 class="subtitle">
-                    {{ page.subtitle }}
-                </h2>
+    </div>
+</section>
+<section class="container">
+    <!-- Takeaway section -->
+    {% include takeaway.html deliveroo=page.deliveroo_url takeaway=page.takeaway_url uber=page.uber_url %}
+    <!-- End takeaway section -->
+
+    <!-- Menu -->
+    <div id="menu" class="section has-background-white box">
+        {% include menutabs.html %}
+        {% include menu.html %}
+        {% include menu-footer.html %}
+    </div>
+    <!-- End Menu -->
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child is-white notification box">
+                    <div class="content has-text-right">
+                        {{ page.shop_address }}
+                        <p>+32 (0){{ page.tel }}</p>
+                        <p>BE 0700.829.057</p>
+                        <p><a aria-label="Sent us a mail" href="mailto:info@maju.shop">info@maju.shop</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent is-8">
+                <div class="tile is-child is-white notification box">
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column">
+                                <a aria-label="Facebook Icon" href="https://www.facebook.com/majuantwerp/">
+                                    <span class="icon">
+                                        <i class="mdi mdi-facebook-box mdi-48px"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a aria-label="Instagram Icon" href="https://www.instagram.com/maju_by_jones/">
+                                    <span class="icon">
+                                        <i class="mdi mdi-instagram mdi-48px"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <iframe title="Google Maps Map" width="850" height="450" frameborder="0" style="border:0" src='{{ page.maps_url }}'></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child is-white notification box">
+                    <div class="content has-text-right">
+                        <h1>Openingsuren</h1>
+                        {{ page.open_hours }}
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="container">
-        <!-- Takeaway section -->
-        {% include takeaway.html deliveroo=page.deliveroo_url takeaway=page.takeaway_url uber=page.uber_url %}
-        <!-- End takeaway section -->
+    <!-- End Contact -->
 
-        <!-- Menu -->
-        <div id="menu" class="section has-background-white box">
-            {% include menutabs.html %}
-            {% include menu.html %}
-            <p class="has-text-centered"><b>Follow us: @maju_by_jones | info@maju.shop | www.maju.shop | Tel nr.: +32 (0)3 437 77 08</b></p>
-            <p class="has-text-centered">Alle info omtrent allergenen kan u terugvinden op de website, aarzel niet om contact op te nemen via mail, telefoon of ons contactformulier.
-                Bestellen voor 10:00 is leveren vanaf 11:00. Vanaf 20 personen minstens 24 uur op voorhand bestellen. L=Lactose, G=Gluten, N=Noten.</p>
-        </div>
-        <!-- End Menu -->
-
-        <!-- Contact -->
-        <section id="contact" class="container">
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <div class="tile is-child is-white notification box">
-                        <div class="content has-text-right">
-                            {{ page.shop_address }}
-                            <p>+32 (0){{ page.tel }}</p>
-                            <p>BE 0700.829.057</p>
-                            <p><a href="mailto:info@maju.shop">info@maju.shop</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile is-parent is-8">
-                    <div class="tile is-child is-white notification box">
-                        <div class="content">
-                            <div class="columns">
-                                <div class="column">
-                                    <a href="https://www.facebook.com/majuantwerp/">
-                                        <span class="icon">
-                                            <i class="mdi mdi-facebook-box mdi-48px"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="column">
-                                    <a href="https://www.instagram.com/maju_by_jones/">
-                                        <span class="icon">
-                                            <i class="mdi mdi-instagram mdi-48px"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <iframe width="850" height="450" frameborder="0" style="border:0" src='{{ page.maps_url }}'></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <div class="tile is-child is-white notification box">
-                        <div class="content has-text-right">
-                            <h1>Openingsuren</h1>
-                            {{ page.open_hours }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact -->
-
+    <!-- Partners -->
+    <section id="partners">
+        {% include partners.html %}
     </section>
-    <div class="section"></div>
-    <footer class="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-3 is-offset-2">
-                </div>
-                <div class="column is-3">
-                </div>
-                <div class="column is-4">
-                </div>
+    <!-- End Partners -->
+
+    <a class="button back-to-top-button is-info is-hidden" href="#" id="to-top-button">Back to Top</a>
+</section>
+<div class="section"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3 is-offset-2">
             </div>
-            <div class="content has-text-centered">
-                <p>
-                    <a class="icon" href="https://github.com/dansup/bulma-templates">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </p>
-                <div class="control level-item">
-                    <a href="https://github.com/dansup/bulma-templates">
-                        <div class="tags has-addons">
-                            <span class="tag is-dark">Bulma Templates</span>
-                            <span class="tag is-info">MIT license</span>
-                        </div>
-                    </a>
-                </div>
+            <div class="column is-3">
+            </div>
+            <div class="column is-4">
             </div>
         </div>
-    </footer>
+        <div class="content has-text-centered">
+            <div class="control level-item">
+                <a aria-label="Github Bulma Templates Link" href="https://github.com/dansup/bulma-templates">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Bulma Templates</span>
+                        <span class="tag is-info">MIT license</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

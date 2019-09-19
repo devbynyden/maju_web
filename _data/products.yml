@@ -1,14 +1,3 @@
-- name: Soep
-  subtitle: Warm of koud
-  products:
-      - name: Kippenbouillon
-        price: "3.50"
-      - name: Tomaat
-        price: "3.00"
-      - name: Dagsoep
-        price: "3.00"
-      - name: Supplement brood
-        price: "0.50"
 - name: Specials
   subtitle: "Keuze uit: Wrap, bruine baguette, witte baguette of speltbrood"
   price: "5.00"
@@ -33,6 +22,17 @@
         description: "Sweet potato, hummus, avocado, gegrilde groenten, romeinse sla, lente-ui, cresonette, olijfolie-azijn"
       - name: Green Goddess (Vegan)
         description: "Bonen hummus, koolsla, goji, rucola, selder, olijven broccoli, champignon, zadenmix"
+- name: Soep
+  subtitle: Warm of koud
+  products:
+      - name: Kippenbouillon
+        price: "3.50"
+      - name: Tomaat
+        price: "3.00"
+      - name: Dagsoep
+        price: "3.00"
+      - name: Supplement brood
+        price: "0.50"
 - name: Bowlzz
   products:
       - name: Breakfast Bowl

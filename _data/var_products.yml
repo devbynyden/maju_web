@@ -4,7 +4,7 @@ products:
     price: "4.50"
     variations:
       - name: Chicken madras curry
-        price: "5.00"
+        price: "0.50"
       - name: Krabby
         price: "1.50"
       - name: Belegen kaas

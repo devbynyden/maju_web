@@ -36,29 +36,24 @@
 </div>
 
 <!-- Breakfast Extra's -->
-<div class="row">
-    <div class="col s12 m12">
-        <h4 class="resto-category-name center-align"> | {{ site.data.breakfast.extras_title | downcase }} | </h4>
-        {% for product in site.data.breakfast.extras %}
-        <div class="col s4 m4 center-align">
-            <h5 class="card-title center-align">{{ product.name }}</h5>
-            <h6 class="green-text text-accent-4 flow-text">
-                {% if product.var-prices %}
-                {%  for var-price in product.var-prices %}
-                <b>{{ var-price.name }}</b>: {{ site.currency }}{{ var-price.price }}
-                {% endfor %}
-                {% elsif category.var-prices %}
-                {%  for var-price in category.var-prices %}
-                <b>{{ var-price.name }}</b>: {{ site.currency }}{{ var-price.price }}
-                {% endfor %}
-                {% elsif product.price %}
-                {{ site.currency }}{{ product.price }}
-                {% elsif category.price %}
-                {{ site.currency }}{{ category.price }}
-                {% endif %}
-            </h6>
-            <p class="center-align grey-text">{{ product.description }}</p>
+<div class="columns is-multiline is-variable">
+    <div class="column is-half is-offset-one-quarter">
+        <h1 class="title has-text-centered"> | {{ site.data.breakfast.extras_title | downcase }} | </h1>
+        <div class="columns is-multiline is-variable">
+            {% for extra in site.data.breakfast.extras %}
+            <div class="column is-half">
+                    <div class="columns">
+                        <div class="column is-8">
+                                <div class="has-text-justified is-size-5">{{ extra.name }}</div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="has-text-info has-text-weight-bold is-pulled-right is-size-4">
+                                {{ site.currency }}{{ extra.price }}
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
