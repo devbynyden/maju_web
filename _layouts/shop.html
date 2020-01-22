@@ -8,7 +8,7 @@ layout: default
                 <div class="navbar-brand">
                     <a aria-label="Maju Logo" class="navbar-item" href="/">
                         <img class="shop-logo" src='{{ site.logo }}' alt="Logo">
-                    </a> {{ page.shop_name }}
+                    </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
@@ -17,7 +17,7 @@ layout: default
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <div class="tabs is-right">
+                        <div class="tabs is-right has-text-weight-bold is-size-4-tablet">
                             <ul>
                                 {% for menu-item in site.data.shop_nav %}
                                 <li><a aria-label="{{ menu-item.title }}"data-scroll href="#{{ menu-item.link }}">{{ menu-item.title }}</a></li>
@@ -31,10 +31,10 @@ layout: default
     </div>
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="title">
-                Maju {{ page.shop_name }}
+            <h1 class="title is-size-1">
+                Maju
             </h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle has-text-light">
                 {{ page.subtitle }}
             </h2>
         </div>
@@ -44,21 +44,20 @@ layout: default
     <!-- Takeaway section -->
     {% include takeaway.html deliveroo=page.deliveroo_url takeaway=page.takeaway_url uber=page.uber_url %}
     <!-- End takeaway section -->
-
-    <!-- Menu -->
-    <div id="menu" class="section has-background-white box">
-        {% include menutabs.html %}
-        {% include menu.html %}
+</section>
+<section id="menu" class="hero">
+    {% include menu-new.html %}
+</section>
+<section class="container">
+    <div class="box">
         {% include menu-footer.html %}
     </div>
-    <!-- End Menu -->
-
     <!-- Contact -->
     <section id="contact" class="container">
         <div class="tile is-ancestor">
             <div class="tile is-parent">
                 <div class="tile is-child is-white notification box">
-                    <div class="content has-text-right">
+                    <div class="content has-text-centered-mobile has-text-left-tablet">
                         {{ page.shop_address }}
                         <p>+32 (0){{ page.tel }}</p>
                         <p>BE 0700.829.057</p>
@@ -69,7 +68,7 @@ layout: default
             <div class="tile is-parent is-8">
                 <div class="tile is-child is-white notification box">
                     <div class="content">
-                        <div class="columns">
+                        <div class="columns is-mobile">
                             <div class="column">
                                 <a aria-label="Facebook Icon" href="https://www.facebook.com/majuantwerp/">
                                     <span class="icon">
@@ -85,13 +84,15 @@ layout: default
                                 </a>
                             </div>
                         </div>
-                        <iframe title="Google Maps Map" width="850" height="450" frameborder="0" style="border:0" src='{{ page.maps_url }}'></iframe>
+                        <div class="map-responsive">
+                            <iframe title="Google Maps Map" width="850" height="450" frameborder="0" style="border:0" src='{{ page.maps_url }}'></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tile is-parent">
                 <div class="tile is-child is-white notification box">
-                    <div class="content has-text-right">
+                    <div class="content has-text-right-tablet has-text-centered-mobile">
                         <h1>Openingsuren</h1>
                         {{ page.open_hours }}
                     </div>
@@ -112,14 +113,6 @@ layout: default
 <div class="section"></div>
 <footer class="footer">
     <div class="container">
-        <div class="columns">
-            <div class="column is-3 is-offset-2">
-            </div>
-            <div class="column is-3">
-            </div>
-            <div class="column is-4">
-            </div>
-        </div>
         <div class="content has-text-centered">
             <div class="control level-item">
                 <a aria-label="Github Bulma Templates Link" href="https://github.com/dansup/bulma-templates">

@@ -2,6 +2,7 @@
 node_modules
 _site
 .jekyll-metadata
+.jekyll-cache
 
 # local env files
 .env.local

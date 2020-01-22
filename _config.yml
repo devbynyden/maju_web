@@ -4,6 +4,8 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "LICENSE.md"
+  - "TODO.md"
+  - "yarn.lock"
   - "*.gemspec"
   - ".sass-cache"
   - "node_modules"
@@ -12,6 +14,12 @@ exclude:
   - "webpack.config.js"
   - "webpack"
   - "assets/css/app.sass"
+# Old files
+  - "maju-zuid.html"
+  - "breakfast-menu.html"
+  - "drinks-menu.html"
+  - "food-menu.html"
+  - "old.html"
 
 keep_files:
   - "CNAME"
