@@ -1,0 +1,8 @@
+- name: "Chicken tikka masale met naan & rijst"
+  price: "15.00"
+- name: "Veggie lasagne"
+  price: "14.00"
+- name: "Bulgur met gegrilde groenten"
+  price: "14.00"
+- name: "Tajine van kip met opgelegde citroenen"
+  price: "15.00"

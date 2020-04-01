@@ -1,0 +1,25 @@
+<div class="hero-body">
+    <div class="columns is-mobile">
+        <div class="column is-half-tablet is-offset-one-quarter-tablet">
+            <div class="box">
+                <div class="content has-text-centered">
+                    <p>Wegens de maatregelen omtrend het COVID-19 virus zijn wij genoodzaakt te sluiten. Geen stress wij blijven wel open voor bestellingen. En daarom hebben wij een speciaal leveringsmenu opgesteld.</p>
+                    <p>Alle bestellingen vanaf 35€ zullen gratis geleverd worden. U kan bestellen via telefoon of mail, +32 (0){{ page.tel }} of <a aria-label="Sent us a mail" href="mailto:info@maju.shop">info@maju.shop</a>
+                        Betalingen kunnen via Bancontact of overschrijving op het rekening nr.: BE83 7360 1884 2215.
+                    </p>
+                    <h2>Be Safe!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column box is-8 is-offset-2">
+        <div class="columns is-multiline is-variable is-8">
+            {% for product in site.data.delivery_menu %}
+                {% include menu-covid-column.html %}
+            {% endfor %}
+            {% for product in site.data.amanda %}
+                {% include menu-covid-column.html %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

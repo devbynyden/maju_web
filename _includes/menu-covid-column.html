@@ -1,0 +1,13 @@
+<div class="column is-half">
+    <div class="columns">
+        <div class="column">
+            <p class="has-text-info has-text-weight-bold is-pulled-right is-size-5">
+                {{ site.currency }}{{ product.price }}
+            </p>
+            <h3 class="subtitle is-size-4 has-text-weight-semibold" style="border-bottom:solid;border-bottom-width:2px;">{{ product.name }}</h3>
+            {% if product.description %}
+                <p class="has-text-justified is-size-5">{{ product.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>

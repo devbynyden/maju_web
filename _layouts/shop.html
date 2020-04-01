@@ -40,14 +40,17 @@ layout: default
         </div>
     </div>
 </section>
+<section id="menu" class="hero">
+    {% include menu-covid.html %}
+</section>
 <section class="container">
     <!-- Takeaway section -->
     {% include takeaway.html deliveroo=page.deliveroo_url takeaway=page.takeaway_url uber=page.uber_url %}
     <!-- End takeaway section -->
 </section>
-<section id="menu" class="hero">
+<!-- <section id="menu" class="hero">
     {% include menu-new.html %}
-</section>
+</section> -->
 <section class="container">
     <div class="box">
         {% include menu-footer.html %}
@@ -60,8 +63,9 @@ layout: default
                     <div class="content has-text-centered-mobile has-text-left-tablet">
                         {{ page.shop_address }}
                         <p>+32 (0){{ page.tel }}</p>
-                        <p>BE 0700.829.057</p>
                         <p><a aria-label="Sent us a mail" href="mailto:info@maju.shop">info@maju.shop</a></p>
+                        <p class="is-size-7">BTW:<br>BE 0700.829.057</p>
+                        <p class="is-size-7">Rek. nr.:<br>BE83 7360 1884 2215</p>
                     </div>
                 </div>
             </div>
