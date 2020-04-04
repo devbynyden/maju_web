@@ -14,10 +14,22 @@
     </div>
     <div class="column box is-8 is-offset-2">
         <div class="columns is-multiline is-variable is-8">
-            {% for product in site.data.delivery_menu %}
+            <div class="column is-full has-text-centered">
+                <p class="is-size-4" style="border-style: solid;border-width: 2.5px;border-radius: 20px;">Dishes by <a class="has-text-info" href="#">Maju</a></p>
+            </div>
+            {% for product in site.data.covid.delivery_menu %}
                 {% include menu-covid-column.html %}
             {% endfor %}
-            {% for product in site.data.amanda %}
+            <div class="column is-full has-text-centered">
+                <p class="is-size-4" style="border-style: solid;border-width: 2.5px;border-radius: 20px;">Dishes by <a class="has-text-info" href="https://www.facebook.com/pages/category/Food-Delivery-Service/Salu-Tiffin-Time-633154600481419/">Salu Tiffin Time</a></p>
+            </div>
+            {% for product in site.data.covid.amanda %}
+                {% include menu-covid-column.html %}
+            {% endfor %}
+            <div class="column is-full has-text-centered">
+                <p class="is-size-4" style="border-style: solid;border-width: 2.5px;border-radius: 20px;">Whats Cooking dishes by Jesse</p>
+            </div>
+            {% for product in site.data.covid.whats_cooking %}
                 {% include menu-covid-column.html %}
             {% endfor %}
         </div>
