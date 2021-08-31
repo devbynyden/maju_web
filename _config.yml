@@ -35,7 +35,7 @@ title: Maju - Slowfood & Drinks Set To An Urban Heartbeat
 subtitle: ""
 url: 'maju.shop' # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: '/maju_web'
+baseurl: '/'
 logo: "assets/images/logo_white.png"
 currency: €
 # Tracker
