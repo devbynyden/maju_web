@@ -1,0 +1,97 @@
+---
+layout: default
+---
+<section class="hero-{{ page.shop_name | downcase }} is-medium is-bold box-shop">
+    <div id="home" class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a aria-label="Maju Logo" class="navbar-item" href="/">
+                        <img class="shop-logo" src='{{ site.logo }}' alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-size-1">
+                Maju
+            </h1>
+            <h2 class="subtitle has-text-light">
+                {{ page.subtitle }}
+            </h2>
+        </div>
+    </div>
+</section>
+<section id="menu" class="hero">
+    {% include construct.html %}
+</section>
+<section class="container">
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child is-white notification box">
+                    <div class="content has-text-centered-mobile has-text-left-tablet">
+                        {{ page.shop_address }}
+                        <p>+32 (0){{ page.tel }}</p>
+                        <p><a aria-label="Sent us a mail" href="mailto:info@maju.shop">info@maju.shop</a></p>
+                        <p class="is-size-7">BTW:<br>BE 0700.829.057</p>
+                        <p class="is-size-7">Rek. nr.:<br>BE83 7360 1884 2215</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent is-8">
+                <div class="tile is-child is-white notification box">
+                    <div class="content">
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <a aria-label="Facebook Icon" href="https://www.facebook.com/majuantwerp/">
+                                    <span class="icon">
+                                        <i class="mdi mdi-facebook-box mdi-48px"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="column">
+                                <a aria-label="Instagram Icon" href="https://www.instagram.com/maju_by_jones/">
+                                    <span class="icon">
+                                        <i class="mdi mdi-instagram mdi-48px"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="map-responsive">
+                            <iframe title="Google Maps Map" width="850" height="450" frameborder="0" style="border:0" src='{{ page.maps_url }}'></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child is-white notification box">
+                    <div class="content has-text-right-tablet has-text-centered-mobile">
+                        <h1>Openingsuren</h1>
+                        {{ page.open_hours }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    <a class="button back-to-top-button is-info is-hidden" href="#" id="to-top-button">Back to Top</a>
+</section>
+<div class="section"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <div class="control level-item">
+                <a aria-label="Github Bulma Templates Link" href="https://github.com/dansup/bulma-templates">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Bulma Templates</span>
+                        <span class="tag is-info">MIT license</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -39,4 +39,4 @@ baseurl: ''
 logo: "assets/images/logo_white.png"
 currency: €
 # Tracker
-analytics: UA-124231600-1
+# analytics: UA-124231600-1
